@@ -49,10 +49,13 @@ for acc in accounts_vote:
   br.form['email'] = parts[0]
   br.form['password'] = parts[1]
   br.submit()
-  # 182 eneko
-  print 'voting to aznar'
+
+  print 'Voting...'
+
   r = br.open('http://rivals.redbull.com/es/frontuser/surfer_vote_this/182', "")
 
+  # Here we would see if there is an error (such as max votes per ip)
+  # and we would stop
   print r.read()
 
 # # remove the first line

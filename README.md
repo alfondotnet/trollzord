@@ -15,7 +15,7 @@ pip install mechanize
 
 3. Grab some accounts
 
-`python vote.py`
+`python grab_accounts.py`
 
 4. Vote for enekito
 
